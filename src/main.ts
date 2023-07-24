@@ -16,10 +16,10 @@ async function bootstrap() {
     next();
   });
 
-  app.enableCors({
-    allowedHeaders: '*',
-    origin: '*',
-  });
+  // app.enableCors({
+  //   allowedHeaders: '*',
+  //   origin: '*',
+  // });
 
   app.useGlobalPipes(
     new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true }),
